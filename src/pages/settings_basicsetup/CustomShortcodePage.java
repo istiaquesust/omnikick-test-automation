@@ -8,11 +8,9 @@ import utils.HandleElementByJS;
 
 public class CustomShortcodePage {
 	
-
 	WebDriver driver;
 	HandleElement handleElement;
 	HandleElementByJS handleElementByJS;
-	
 	
 	public CustomShortcodePage(WebDriver driver)
 	{
