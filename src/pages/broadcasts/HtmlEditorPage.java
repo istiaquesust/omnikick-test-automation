@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import utils.HandleElement;
-import utils.HandleElementByJS;
 
 public class HtmlEditorPage {
 	
@@ -34,9 +33,6 @@ public class HtmlEditorPage {
 	
 	public void setEmailBody(String email_body)
 	{
-		//By email_subject_locator = By.className("editor__content");
-		
-		//By email_subject_locator = By.xpath("//*[@id=\"app\"]/div/div[3]/div[1]/div/div/div/div/form/div/div[2]/div/div/div[2]/div/p");
 		By email_subject_locator = By.xpath("//form/div/div[2]/div/div/div[2]/div/p");
 		handleElement.sendKeysOn(email_subject_locator, email_body);
 	}
